@@ -1,9 +1,21 @@
-
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(1, 61, 1);
+}
 
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    color: white;
+}
+
+header {
+    font-size: 15px;
+    border-bottom: 3px ridge white;
+    margin: .5em;
+    padding: 1em;
 }
 
 main {
@@ -13,8 +25,64 @@ main {
     align-items: center;
 }
 
+
 .digitalclock {
     display: flex;
     flex-direction: row;
     gap: .25em;
+    font-size: 40px;  
+    background-color: rgb(69, 64, 64);  
+    padding: 6px;
 }
+
+.digitalclock h3 {
+    background-color: rgb(69, 64, 64);     
+}
+
+#dash,#dash2{
+    display: none;
+}
+
+
+
+footer {
+    padding: 20px;
+    font-size: 10px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+
+    main{
+        display: flex;
+        flex-direction: column;
+     }
+
+     body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        border-top: 3px solid white;
+    }
+
+    .digitalclock{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
+
+    #colon1, #colon2 {
+    display: none; 
+  }
+
+    #dash,#dash2 {
+    display: block;
+}
+
+
+
+}
+
+
